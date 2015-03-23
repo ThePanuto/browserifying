@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{% block title %} My website {% endblock %}</title>
+    {% block scripts %}
+      <script src="/js/bundle.min.js"></script>
+    {% endblock %}
+
+    {% block css %}
+      <link rel="stylesheet" href="/css/bundle.min.css">
+    {% endblock %}
+  </head>
+  <body>
+    <section class="left">
+      {% block left %}{% endblock %}
+    </section>
+    <section class="right">
+      {% block right %}{% endblock %}
+    </section>
+    <footer>
+      {% block footer %} My Website - All Rights Reserved {% endblock %}
+    </footer>
+  </body>
+</html>
